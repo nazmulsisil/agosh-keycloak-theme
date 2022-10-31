@@ -102,3 +102,4 @@ dist
 # Extracted keycloak themes
 themes/keycloak-provided-themes
 themes/tailwind-example/resources/css/styles.css
+themes/agosh/resources/css/styles.css

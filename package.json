@@ -4,7 +4,9 @@
   "description": "An example development environment setup to build Keycloak themes",
   "scripts": {
     "build:tailwind-example:dev": "tailwindcss -i ./styles/styles.css -o ./themes/tailwind-example/resources/css/styles.css --watch",
+    "build:agosh:dev": "tailwindcss -i ./styles/styles.css -o ./themes/agosh/resources/css/styles.css --watch",
     "build:tailwind-example": "NODE_ENV=production tailwindcss -i ./styles/styles.css -o ./themes/tailwind-example/resources/css/styles.css --minify",
+    "build:agosh": "NODE_ENV=production tailwindcss -i ./styles/styles.css -o ./themes/agosh/resources/css/styles.css --minify",
     "prettify": "prettier --write '**/*.{js,jsx}'",
     "prepare": "husky install"
   },

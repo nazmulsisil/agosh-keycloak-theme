@@ -36,7 +36,7 @@
 
 		<div class="h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
 			<div class="sm:mx-auto sm:w-full sm:max-w-md">
-				<img class="mx-auto h-12 w-auto" src="${url.resourcesPath}/img/TRIGO-logo-computerface.svg" alt="logo" />
+				<img class="mx-auto h-12 w-auto" src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
 				<h1 class="mt-6 text-center text-header2 tracking-header2 font-semibold text-trigo-blue">
 					${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
 				</h1>

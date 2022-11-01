@@ -14,6 +14,8 @@
 		<link rel="icon" href="${url.resourcesPath}/img/favicon.ico" />
 
 		<link rel="stylesheet" href="${url.resourcesPath}/css/styles.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/tokens.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/custom-tokens.css" />
 	</head>
 	<body class="h-full flex flex-col">
 		<header class="bg-trigo-blue">

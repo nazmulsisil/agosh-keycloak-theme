@@ -3,7 +3,6 @@
 .sign__wrapper{min-height: 100vh;
 display: flex;
 justify-content: center;
-/* align-items: center; */
 }
 .sign__container{
     width: 100%;
@@ -78,7 +77,7 @@ justify-content: center;
     color:var(--on-surface);
 }
 
-.sign__term-text-wrapper{
+.sign__term-text{
     font-size: var(--m3-body-medium-font-size);
     text-decoration: var(--m3-body-medium-text-decoration);
     font-family: var(--m3-body-medium-font-family);
@@ -90,14 +89,25 @@ justify-content: center;
     color: var(--outline);
 }
 
-.sign__link-text-wrapper{
+.sign__link{
     color: var(--inverse-surface);
+    text-decoration: none;
 }
 
-.sign__link-wrapper{
-    cursor: pointer; 
+.sign__forgot-link{
+    font-size: var(--m3-body-medium-font-size);
+    text-decoration: var(--m3-body-medium-text-decoration);
+    font-family: var(--m3-body-medium-font-family);
+    font-weight: var(--m3-body-medium-font-weight);
+    font-style: var(--m3-body-medium-font-style);
+    font-stretch: var(--m3-body-medium-font-stretch);
+    letter-spacing: var(--m3-body-medium-letter-spacing);
+    line-height: var(--m3-body-medium-line-height);
+    color: var(--link-color);
+    font-weight: 600;
+    line-height: 1.5rem;
 }
-.sign__link-wrapper > * :hover {
+.sign__forgot-link:hover {
     text-decoration: underline;
 }
 

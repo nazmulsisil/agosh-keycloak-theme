@@ -39,25 +39,26 @@
 
         <div class='u-divider-2-5rem'> </div>
         <div>
-          <span class='term-text-wrapper'>
+          <span class='sign__term-text'>
             By continuing, you're confirming that you've read and agree to our
           </span>
-          <a class='link-text-wrapper' data-cy="sign-up-terms" href={urlTerms} variant="text">
+          <a class='sign__link' data-cy="sign-up-terms" href={urlTerms} variant="text">
             Terms and Conditions
           </a>
           ,
-          <a class='link-text-wrapper' data-cy="sign-up-privacy" href={urlPrivacy} variant="text">
+          <a class='sign__link' data-cy="sign-up-privacy" href={urlPrivacy} variant="text">
            Privacy Policy
           </a>
-          <span class='link-text-wrapper'>and</span>
-          <a class='link-text-wrapper' href={urlCookiePolicy} variant="text">
+          <span class='sign__link'>and</span>
+          <a class='sign__link' href={urlCookiePolicy} variant="text">
            Cookie Policy
           </a>
         </div>
         <div class='u-divider-1-5rem'></div>
         <div class='grid grid--between'>
           <div>
-            <a href='#'
+            <a  class='sign__forgot-link'
+			href='#'
               data-cy="sign-in-forgot-password"
               onClick={handleClickForgotPassword}
               text-link-bold=""

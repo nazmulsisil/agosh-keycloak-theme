@@ -75,6 +75,10 @@
           </button>
         </div>
       </form>
+ 		<div class='u-divider-4-5rem'></div>
+	  <button fluid variant="tonal" onClick={handleCreateAccount}>
+        Create an Account
+      </button>
 	</div>
 	</div>
     </#if>

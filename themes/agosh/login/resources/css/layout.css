@@ -58,7 +58,7 @@
 	transform-style: preserve-3d;
 	backface-visibility: hidden;
 }
-.placeholder__block > img {
+.placeholder__block img {
 	border-radius: inherit;
 }
 .placeholder__block:after {
@@ -71,45 +71,69 @@
 	left: 0px;
 	border-radius: inherit;
 	background-color: inherit;
-	/* ${({ vertical }) =>
-      css`
-        transform: ${vertical ? 'rotateX' : 'rotateY'}(-180deg);
-      `} */
+	transform: rotateY(-180deg);
 	backface-visibility: hidden;
 	transform-style: preserve-3d;
+}
+.placeholder__block--vertical:after {
+	transform: rotateX(-180deg);
 }
 
 .placeholder__block--delay1 {
 }
+
 .placeholder__block--delay2 {
 }
+
 .placeholder__block--delay3 {
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-1 {
+	background-color: var(--face-animation-block-1);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-2 {
+	background-color: var(--face-animation-block-2);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-3 {
+	background-color: var(--face-animation-block-3);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-4 {
+	background-color: var(--face-animation-block-4);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-5 {
+	background-color: var(--face-animation-block-5);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-6 {
+	background-color: var(--face-animation-block-6);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-7 {
+	background-color: var(--face-animation-block-7);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-8 {
+	background-color: var(--face-animation-block-8);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-9 {
+	background-color: var(--face-animation-block-9);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-10 {
+	background-color: var(--face-animation-block-10);
 }
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-11 {
+	background-color: var(--face-animation-block-11);
 }
-.placeholder__block--animation-1 {
-}
-.placeholder__block--animation-1 {
+
+.placeholder__block--color-12 {
+	background-color: var(--face-animation-block-12);
 }
 
 .placeholder__block--shape-topLeft {

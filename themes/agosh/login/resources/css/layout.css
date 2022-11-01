@@ -37,6 +37,119 @@
 .layout__right-content {
 }
 
+/* /////// placeholder start*/
+
+.placeholder {
+	position: relative;
+}
+.placeholder__row {
+	height: 200px;
+	width: 600px;
+	min-width: 600px;
+	display: flex;
+}
+.placeholder__block {
+	position: relative;
+	display: flex;
+	align-items: flex-end;
+	height: 200px;
+	width: 200px;
+
+	transform-style: preserve-3d;
+	backface-visibility: hidden;
+}
+.placeholder__block > img {
+	border-radius: inherit;
+}
+.placeholder__block:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: 0px;
+	bottom: 0px;
+	top: 0px;
+	left: 0px;
+	border-radius: inherit;
+	background-color: inherit;
+	/* ${({ vertical }) =>
+      css`
+        transform: ${vertical ? 'rotateX' : 'rotateY'}(-180deg);
+      `} */
+	backface-visibility: hidden;
+	transform-style: preserve-3d;
+}
+
+.placeholder__block--delay1 {
+}
+.placeholder__block--delay2 {
+}
+.placeholder__block--delay3 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+.placeholder__block--animation-1 {
+}
+
+.placeholder__block--shape-topLeft {
+	border-radius: 0px 100px 0px 0px;
+}
+
+.placeholder__block--shape-rounded {
+	border-radius: 200px;
+}
+
+.placeholder__block--shape-bottom {
+	border-radius: 0px 0px 100px 100px;
+}
+
+.placeholder__block--shape-top {
+	border-radius: 100px 100px 0px 0px;
+}
+
+.placeholder__block--shape-bottomRight {
+	border-radius: 0px 0px 0px 100px;
+}
+
+.placeholder__block--shape-left {
+	border-radius: 0px 100px 100px 0px;
+}
+
+.placeholder__block--shape-right {
+	border-radius: 100px 0px 0px 100px;
+}
+
+.placeholder__block--shape-bipolar {
+	border-radius: 100px 0px;
+}
+
+.placeholder__block--shape-topRight {
+	border-radius: 0px 100px 0px 0px;
+}
+
+/* ///////placeholder end*/
+
 @media only screen and (max-width: 80rem) {
 	.layout {
 		min-height: auto;

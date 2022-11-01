@@ -2,12 +2,7 @@
 <@template.loginLayout ; section>
 	<#if section = "main">
 	<div class='sign__wrapper'>
-	<div class='sign__container'>
-	
-<div class='u-divider-5-625rem' ></div>
-	<img  src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
-     <div class='sign__alert-container'></div>
-   
+   	<div class='u-divider-4-5rem'></div>
     <div class='sign__headline'>Sign in to your Agosh account</div>
 	<div class='u-divider-0-75rem' ></div>
 
@@ -79,7 +74,7 @@
 	  <button fluid variant="tonal" onClick={handleCreateAccount}>
         Create an Account
       </button>
-	</div>
+
 	</div>
     </#if>
 </@template.loginLayout>

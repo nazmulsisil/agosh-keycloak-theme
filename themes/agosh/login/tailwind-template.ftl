@@ -17,6 +17,7 @@
 		<link rel="stylesheet" href="${url.resourcesPath}/css/tokens.css" />
 		<link rel="stylesheet" href="${url.resourcesPath}/css/custom-tokens.css" />
 		<link rel="stylesheet" href="${url.resourcesPath}/css/login.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/layout.css" />
 	
 	      
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -31,12 +32,30 @@
         />
       
 	</head>
-	<body class="h-full flex flex-col">
-	 
-	 <#nested "main">
-	 <#--  <div class='testing-hello'> hello </div>
-	 <div class='testing-hello'> hello how are you </div>  -->
-		
+	<body class="h-full flex flex-col">			
+		<div class='layout'>
+			<div class='layout__left'>	
+				<div class='layout__left-content-wrapper'>
+					<div class='layout__left-content'>
+						<div class='u-divider-5-625rem'></div>
+						<img  src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
+						<div class='u-divider-0-25rem'></div>
+						<#--  <div class='sign__alert-container'></div>  -->
+						
+						
+						<#--  //////  -->
+						<#nested "main">
+					</div>	
+				</div>
+			</div>
+			<div class='layout__right'>
+				<div class='layout__right-content-wrapper'>				
+					<div class='layout__right-content'>
+
+					</div>
+				</div>
+			</div>
+		</div>	
 	</body>
 </html>
 </#macro>

@@ -1,0 +1,65 @@
+.layout {
+	display: flex;
+	justify-content: center;
+	min-height: 61.375rem;
+	background: linear-gradient(0deg, var(--surface11), var(--surface11)),
+		var(--surface);
+	position: relative;
+}
+.layout__left {
+	display: flex;
+	justify-content: center;
+	width: 50%;
+	min-height: 100vh;
+	flex-shrink: 1;
+}
+.layout__left-content-wrapper {
+	max-width: 48rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+.layout__left-content {
+	width: 100%;
+	max-width: 31rem;
+	position: relative;
+}
+.layout__right {
+	width: 50%;
+	background-color: var(--surface);
+}
+.layout__right-content-wrapper {
+	display: flex;
+	justify-content: center;
+	padding-left: 2.5rem;
+	padding-right: 2.5rem;
+}
+.layout__right-content {
+}
+
+@media only screen and (max-width: 80rem) {
+	.layout {
+		min-height: auto;
+	}
+	.layout__right {
+		width: 100%;
+		max-width: 40.5rem;
+	}
+	.layout__left-content-wrapper {
+		padding-left: 1rem;
+		padding-right: 1rem;
+	}
+	.layout__right-content-wrapper {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+@media only screen and (max-width: 60rem) {
+	.layout__left {
+		width: 100%;
+	}
+	.layout__right {
+		display: none;
+	}
+}

@@ -103,7 +103,8 @@ justify-content: center;
 
 .grid{
     display: grid;
-    
+    grid-gap:1rem;
+    align-items: center;
 }
 
 .grid--between{

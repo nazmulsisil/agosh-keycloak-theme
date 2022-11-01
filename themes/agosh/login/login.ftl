@@ -4,40 +4,40 @@
 	<div class='sign__wrapper'>
 	<div class='sign__container'>
 	
-<div class='divider-5-625rem' ></div>
+<div class='u-divider-5-625rem' ></div>
 	<img  src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
-     <div class='alert-container'></div>
+     <div class='sign__alert-container'></div>
    
-    <div class='headline'>Sign in to your Agosh account</div>
-	<div class='divider-0-75rem' ></div>
+    <div class='sign__headline'>Sign in to your Agosh account</div>
+	<div class='u-divider-0-75rem' ></div>
 
-	 <div class='sub-headline'>
+	 <div class='sign__sub-headline'>
         Use your email or another service to continue with Agosh (it's free)
         <span role="img" aria-label="">
           ⚡️!
         </span>
       </div>
-	<div class='divider-2rem' ></div>
+	<div class='u-divider-2rem' ></div>
 
 	   <form onSubmit={onSubmit}>
         <input
           data-cy="sign-in-email-input"
           label="Email"
         />
-        <div class='divider-1-5rem' ></div>
+        <div class='u-divider-1-5rem' ></div>
         <input
           data-cy="sign-in-password-input"
           label="Password"
           type="password"         
         />
-        <div class='divider' ></div>
+        <div class='u-divider' ></div>
         <input   type='checkbox'      
           ref={rememberMeRef}
         />
-          <div class='checkbox-text-wrapper'>Remember me</div>
+          <div class='sign__checkbox-text-wrapper'>Remember me</div>
         
 
-        <div class='divider-2-5rem'> </div>
+        <div class='u-divider-2-5rem'> </div>
         <div>
           <span class='term-text-wrapper'>
             By continuing, you're confirming that you've read and agree to our
@@ -54,8 +54,8 @@
            Cookie Policy
           </a>
         </div>
-        <div class='divider-1-5rem'></div>
-        <div class='grid-between'>
+        <div class='u-divider-1-5rem'></div>
+        <div class='grid grid--between'>
           <div>
             <a href='#'
               data-cy="sign-in-forgot-password"

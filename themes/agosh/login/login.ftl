@@ -19,17 +19,14 @@
       </div>
 	<div class='u-divider-2rem' ></div>
 
-	   <form onSubmit={onSubmit}>
-        <input
-          data-cy="sign-in-email-input"
-          label="Email"
-        />
+	  	<form  id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
+    
+			<input tabindex="1" id="username" name="username" value="${(username!'')}" type="text" autofocus autocomplete="off" required  aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>">
+							
         <div class='u-divider-1-5rem' ></div>
-        <input
-          data-cy="sign-in-password-input"
-          label="Password"
-          type="password"         
-        />
+      
+			<input required tabindex="2" id="password" name="password" type="password" aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" autocomplete="current-password" >
+					
         <div class='u-divider' ></div>
         <input   type='checkbox'      
           ref={rememberMeRef}
@@ -67,6 +64,8 @@
               Forgot my password
             </a>
           </div>
+
+
 
           <button
             data-cy="sign-in-submit"

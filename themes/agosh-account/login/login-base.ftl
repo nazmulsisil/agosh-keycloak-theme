@@ -18,9 +18,9 @@
                     </#if>
                   </label>
                   <#if usernameEditDisabled??>
-                    <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
+                    <agosh-input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
                     <#else>
-                      <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off"
+                      <agosh-input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" autofocus autocomplete="off"
                         aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
                       <#if messagesPerField.existsError('username','password')>
                         <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
@@ -33,7 +33,7 @@
                   <label for="password" class="${properties.kcLabelClass!}">
                     ${msg("password")}
                   </label>
-                  <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
+                  <agosh-input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
                     aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
                 </div>
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
@@ -63,7 +63,9 @@
                 <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
                   <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"
             </#if>/>
-            <input tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit" value="${msg("doLogIn")}" />
+            <agosh-button tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit">
+              ${msg("doLogIn")}
+            </agosh-button>
           </div>
           </form>
     </#if>

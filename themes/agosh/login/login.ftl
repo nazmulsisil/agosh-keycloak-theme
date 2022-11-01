@@ -65,8 +65,6 @@
             </a>
           </div>
 
-
-
           <button
             data-cy="sign-in-submit"
             variant="filled"

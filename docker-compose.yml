@@ -19,6 +19,7 @@ services:
        - ./disable-theme-cache.cli:/opt/jboss/startup-scripts/disable-theme-cache.cli
        - ./themes/tailwind-example/:/opt/jboss/keycloak/themes/tailwind-example/
        - ./themes/agosh/:/opt/jboss/keycloak/themes/agosh/
+       - ./themes/agosh-account/:/opt/jboss/keycloak/themes/agosh-account/
       environment:
         DB_VENDOR: POSTGRES
         DB_ADDR: postgres

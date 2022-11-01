@@ -7,7 +7,7 @@
                 <img  src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
                 <div class='u-divider-0-25rem'></div>                
                 
-                <#include "/base-login.ftl">
+                <#include "/login-base.ftl">
             </div>	
         </div>
     </div>

@@ -51,7 +51,7 @@
                     <#if realm.rememberMe && !usernameEditDisabled??>
                       <div class="checkbox">
                         <div class='u-divider'></div>
-                        <label>
+                        <label class='sign__remember'>
                           <#if login.rememberMe??>
                             <input tabindex="3" id="rememberMe" name="rememberMe" type="checkbox" checked>
                             ${msg("rememberMe")}
@@ -117,6 +117,15 @@
                     </span>
                     <#else>
                       <span class="${properties.kcFormSocialAccountNameClass!}">
+                        <#if p.displayName=="Google">
+                          <#include "/icon-google.ftl">
+                        </#if>
+                        <#if p.displayName=="Facebook">
+                          <#include "/icon-facebook.ftl">
+                        </#if>
+                        <#if p.displayName=="LinkedIn">
+                          <#include "/icon-linked-in.ftl">
+                        </#if>
                         ${p.displayName!}
                       </span>
                   </#if>
@@ -132,12 +141,12 @@
           <div id="kc-registration">
             <span class='sign__create-account'>
               ${msg("noAccount")}
-              <agosh-button fluid variant="tonal">
-                <a tabindex="6"
-                  href="${url.registrationUrl}">
+              <a tabindex="6"
+                href="${url.registrationUrl}">
+                <agosh-button fluid variant="tonal">
                   ${msg("doRegister")}
-                </a>
-              </agosh-button>
+                </agosh-button>
+              </a>
             </span>
           </div>
         </div>

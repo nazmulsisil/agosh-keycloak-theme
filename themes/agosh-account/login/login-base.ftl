@@ -82,15 +82,16 @@
             </agosh-button>
           </div>
         </div>
-        <div class='u-divider-4-5rem'></div>
         </div>
         </form>
     </#if>
     </div>
+    <div class='u-divider-2-5rem'></div>
+    <div class='sign__create-account-button-placeholder'></div>
+    <div class='u-divider-1-5rem'></div>
     <#if realm.password && social.providers??>
       <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
         <#-- -->
-          <div class='u-divider-1-5rem'></div>
           <div class='sign__or-wrapper'>
             <div></div>
             <span>

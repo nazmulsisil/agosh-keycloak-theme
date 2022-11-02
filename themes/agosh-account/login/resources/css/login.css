@@ -143,6 +143,12 @@
 }
 .sign__create-account{
 	display: block;
+	position: relative;
+	top: -10.75rem;
+
+}
+.sign__create-account-button-placeholder{
+	height: 2.5rem;
 }
 
 .social-button-wrapper {

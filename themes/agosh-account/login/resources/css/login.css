@@ -156,3 +156,69 @@
 	color: inherit;
 	text-decoration: none;
 }
+
+.social-button-wrapper {
+width: 100%;
+display: flex;
+align-items: center;
+padding-left: 0;
+}
+
+.social-button {
+cursor: pointer;
+padding: 0;
+background-color: transparent;
+outline: none;
+border: none;
+background-color: none;
+outline: none;
+border: none;
+
+background-color: var(--surface);
+border-radius: 1rem;
+width: 100%;
+min-height: 4rem;
+padding: 8px 24px 8px 12px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--on-surface-variant);
+
+font-size: var(--m3-label-large-font-size);
+text-decoration: var(--m3-label-large-text-decoration);
+font-family: var(--m3-label-large-font-family);
+font-weight: var(--m3-label-large-font-weight);
+font-style: var(--m3-label-large-font-style);
+font-stretch: var(--m3-label-large-font-stretch);
+letter-spacing: var(--m3-label-large-letter-spacing);
+line-height: var(--m3-label-large-line-height);
+
+ 
+}
+.social-button:focus,
+.social-button:active,
+.social-button:hover{
+	background-color: none;
+    outline: none;
+    border: none;
+}
+
+.social-button span{
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 0.5rem;
+}
+
+.social-button:not(:last-child){
+	margin-right: 1rem;
+}
+
+ @media only screen and (max-width: 64rem) {
+
+	.social-button{
+    padding: 0.5rem 0;
+    flex-direction: column;
+    min-height: 4.6875rem;
+	}
+  }

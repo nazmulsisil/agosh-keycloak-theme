@@ -87,21 +87,19 @@
         </form>
     </#if>
     </div>
-    <#-- -->
-      <div class='u-divider-1-5rem'></div>
-      <div class='sign__or-wrapper'>
-        <div></div>
-        <span>or continue with</span>
-        <div></div>
-      </div>
-      <div class='u-divider-1-5rem'></div>
-      <#-- -->
-        <#if realm.password && social.providers??>
-          <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
-            <hr />
-            <h4>
+    <#if realm.password && social.providers??>
+      <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
+        <#-- -->
+          <div class='u-divider-1-5rem'></div>
+          <div class='sign__or-wrapper'>
+            <div></div>
+            <span>
               ${msg("identity-provider-login-label")}
-            </h4>
+            </span>
+            <div></div>
+          </div>
+          <div class='u-divider-1-5rem'></div>
+          <#-- -->
             <ul class="${properties.kcFormSocialAccountListClass!}
                         <#if social.providers?size gt 3>
                         ${properties.kcFormSocialAccountListGridClass!}
@@ -125,24 +123,24 @@
                 </a>
               </#list>
             </ul>
+      </div>
+    </#if>
+    </div>
+    <#elseif section="info">
+      <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
+        <div id="kc-registration-container">
+          <div id="kc-registration">
+            <span class='sign__create-account'>
+              ${msg("noAccount")}
+              <agosh-button fluid variant="tonal">
+                <a tabindex="6"
+                  href="${url.registrationUrl}">
+                  ${msg("doRegister")}
+                </a>
+              </agosh-button>
+            </span>
           </div>
-        </#if>
         </div>
-        <#elseif section="info">
-          <#if realm.password && realm.registrationAllowed && !registrationDisabled??>
-            <div id="kc-registration-container">
-              <div id="kc-registration">
-                <span class='sign__create-account'>
-                  ${msg("noAccount")}
-                  <agosh-button fluid variant="tonal">
-                    <a tabindex="6"
-                      href="${url.registrationUrl}">
-                      ${msg("doRegister")}
-                    </a>
-                  </agosh-button>
-                </span>
-              </div>
-            </div>
-          </#if>
-          </#if>
+      </#if>
+      </#if>
   </@layout.registrationLayout>

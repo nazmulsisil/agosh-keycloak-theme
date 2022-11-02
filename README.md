@@ -31,4 +31,4 @@ Before using it in production run
 
 `npm run build:tailwind-example`
 
-(this will use all the optimization features of Tailwind)
+(this will use all the optimization features of Tailwind).

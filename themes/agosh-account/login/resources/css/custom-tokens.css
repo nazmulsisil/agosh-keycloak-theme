@@ -1,0 +1,196 @@
+:host,
+:root {
+  --fab-icon-size-normal: 1.5rem;
+  --fab-icon-size-large: 2.25rem;
+  --fab-border-radius-default: 1rem;
+  --fab-border-radius-large: 1.75rem;
+  --fab-height-default: 3.5rem;
+  --fab-height-large: 6rem;
+  --fab-width-default: 3.5rem;
+  --fab-width-large: 6rem;
+  --card-border-radius: 0.75rem;
+
+  --custom-subtitle-font-family: Titillium Web;
+  --custom-subtitle-font-weight: 600;
+  --custom-subtitle-font-size: 0.875rem;
+  --custom-subtitle-font-style: normal;
+  --custom-subtitle-font-stretch: normal;
+  --custom-subtitle-line-height: 1.5rem;
+  --custom-subtitle-paragraph-indent: 0;
+  --custom-subtitle-paragraph-spacing: 0;
+  --custom-subtitle-text-case: none;
+  --custom-subtitle-text-decoration: none;
+  --custom-subtitle-letter-spacing: 0.015625rem;
+
+  --custom-small-header-font-family: Titillium Web;
+  --custom-small-header-font-weight: 700;
+  --custom-small-header-font-size: 0.875rem;
+  --custom-small-header-font-style: normal;
+  --custom-small-header-font-stretch: normal;
+  --custom-small-header-line-height: 1.5rem;
+  --custom-small-header-paragraph-indent: 0;
+  --custom-small-header-paragraph-spacing: 0;
+  --custom-small-header-text-case: none;
+  --custom-small-header-text-decoration: none;
+  --custom-small-header-letter-spacing: 5%;
+
+  --custom-discover-text-font-family: Titillium Web;
+  --custom-discover-text-font-weight: 400;
+  --custom-discover-text-font-size: 0.75rem;
+  --custom-discover-text-line-height: 1.25rem;
+  --custom-discover-text-letter-spacing: 1%;
+
+  --custom-visit-text-font-family: Titillium Web;
+  --custom-visit-text-font-weight: 600;
+  --custom-visit-text-font-size: 0.75rem;
+  --custom-visit-text-line-height: 1.25rem;
+  --custom-visit-text-letter-spacing: 5%;
+
+  --custom-payments-small-text-font-family: Titillium Web;
+  --custom-payments-small-text-font-weight: 400;
+  --custom-payments-small-text-font-size: 0.875rem;
+  --custom-payments-small-text-line-height: 1.875rem;
+  --custom-payments-small-text-font-style: normal;
+
+  --custom-payments-text-font-family: Titillium Web;
+  --custom-payments-text-font-weight: 600;
+  --custom-payments-text-font-size: 0.875rem;
+  --custom-payments-text-line-height: 1.875rem;
+  --custom-payments-text-font-style: normal;
+
+  --custom-security-dialog-font-family: Titillium Web;
+  --custom-security-dialog-font-weight: 400;
+  --custom-security-dialog-font-size: 0.875rem;
+  --custom-security-dialog-line-height: 2rem;
+}
+
+:root,
+:host,
+.agosh-theme-light {
+  --foggy-scroll-bg2: rgba(248, 242, 248, 0);
+  --foggy-scroll-bg1: #f8f2f8;
+  --elevated-default-bg: #f8f2f8;
+  --elevated-hover-bg: #e8e0ef;
+  --elevated-focus-bg: #e7dfee;
+  --elevated-active-bg: #e7dfee;
+  --disabled-bg: #1f1f1f;
+  --disabled-border: #1f1f1f;
+  --tonal-hover-bg: #1d192b;
+  --text-button-bg: #6750a4;
+  --elevation1: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation2: 0px 1px 2px rgba(0, 0, 0, 0.3), 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --elevation-filter: none;
+  --transparent: transparent;
+  --fab-disabled-icons: #1d1b1e55;
+  --fab-disabled-text: #1f1f1f61;
+  --fab-disabled-bg: #1f1f1f1f;
+  --fab-surface-active-bg: rgba(103, 80, 164, 0.12);
+  --fab-primary-active-bg: rgba(33, 0, 93, 0.12);
+  --fab-secondary-active-bg: rgba(29, 25, 43, 0.12);
+  --fab-tertiary-active-bg: rgba(49, 17, 29, 0.12);
+  --solid-bg: #ffffff;
+  --on-solid-bg: #000000;
+  --messaging-avatar-bg: #f4f0fa;
+  --messaging-dot-bg: #6dc852;
+  --messaging-date-label-bg: #1f1f1f1f;
+  --messaging-date-label-text: #1d1b1e55;
+  --link-color: #562f95;
+  --link-button-color: #756f80;
+  --link-button-hover-color: #007ad9;
+  --status-success: #49af90;
+  --status-error: #ff0000;
+  --status-info: #0049cfd9;
+  --status-warning: #ffa500;
+  --sign-in-color: #756f80;
+  --high-contrast: #000000;
+  --scrollbar-track-bg: #f4f0fa;
+  --scrollbar-thumb-bg: #5a3399;
+  --sign-up-account-color: #333333;
+  --image-loader-bg: #fffbfc;
+  --image-uploader-border-color: #6f49af;
+  --upload-text-color: #756f80;
+  --home-visit-text-color: #562f95;
+  --table-head-color: #7a757e;
+  --table-body-color: #231f20;
+  --payments-method-text-color: #231f20;
+  --custom-color-1: #231f20;
+  --image-cropper-background: #00000028;
+  
+  --face-animation-block-1:#E2E2E2;
+  --face-animation-block-2:#EBBFC4;
+  --face-animation-block-3:#DAC1DE;
+  --face-animation-block-4:#E1E7F5;
+  --face-animation-block-5:#E2E2E2;
+  --face-animation-block-6:#CDBF98;
+  --face-animation-block-7:#E5E7EB;
+  --face-animation-block-8:#CBD3E7;
+  --face-animation-block-9:#E4E7EB;
+  --face-animation-block-10:#E2BCC1;
+  --face-animation-block-11:#CDBF98;
+  --face-animation-block-12:#ECBFC4;
+ 
+}
+
+.agosh-theme-dark {
+  --foggy-scroll-bg2: rgba(7, 2, 7, 0);
+  --foggy-scroll-bg1: #262329;
+  --elevated-default-bg: #262329;
+  --elevated-hover-bg: #393441;
+  --elevated-focus-bg: #3a3543;
+  --elevated-active-bg: #3a3543;
+  --disabled-bg: #e3e3e3;
+  --disabled-border: #e3e3e3;
+  --tonal-hover-bg: #e8def8;
+  --text-button-bg: #d0bcff;
+  --elevation1: 0px 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --elevation2: 0px 2px 6px 2px rgba(0, 0, 0, 0.15);
+  --elevation-filter: drop-shadow(0px 1px 2px rgba(0, 0, 0, 0.3));
+  --transparent: transparent;
+  --fab-disabled-icons: #e7e1e661;
+  --fab-disabled-text: #e7e1e661;
+  --fab-disabled-bg: #e3e3e31f;
+  --fab-surface-active-bg: rgba(208, 188, 255, 0.12);
+  --fab-primary-active-bg: rgba(234, 221, 255, 0.12);
+  --fab-secondary-active-bg: rgba(232, 222, 248, 0.12);
+  --fab-tertiary-active-bg: rgba(255, 216, 228, 0.12);
+  --solid-bg: #000000;
+  --on-solid-bg: #ffffff;
+  --messaging-avatar-bg: #f4f0fa;
+  --messaging-dot-bg: #6dc852;
+  --messaging-date-label-bg: #e3e3e31f;
+  --messaging-date-label-text: #e7e1e661;
+  --link-color: #d6baffff;
+  --link-button-color: #756f80;
+  --link-button-hover-color: #007ad9;
+  --status-success: #49af90;
+  --status-error: #ff0000;
+  --status-info: #0049cfd9;
+  --status-warning: #ffa500;
+  --sign-in-color: #756f80;
+  --high-contrast: #ffffff;
+  --scrollbar-track-bg: #1d1b1eff;
+  --scrollbar-thumb-bg: #5a3399;
+  --sign-up-account-color: #bbbbbb;
+  --image-loader-bg: #fffbfc;
+  --image-uploader-border-color: #6f49af;
+  --upload-text-color: #756f80;
+  --home-visit-text-color: #d6baffff;
+  --table-head-color: #7a757e;
+  --table-body-color: #e7e1e6ff;
+  --payments-method-text-color: #e7e1e6ff;
+  --image-cropper-background: #00000028;
+  --custom-color-1: #e7e1e6ff;
+
+  --face-animation-block-1:#818181;
+  --face-animation-block-2:#5C282F;
+  --face-animation-block-3:#47284C;
+  --face-animation-block-4:#1B313E;
+  --face-animation-block-5:#818181;
+  --face-animation-block-6:#433A21;
+  --face-animation-block-7:#313942;
+  --face-animation-block-8:#1B313E;
+  --face-animation-block-9:#313942;
+  --face-animation-block-10:#5C282F;
+  --face-animation-block-11:#433A21;
+  --face-animation-block-12:#5C282F;
+}

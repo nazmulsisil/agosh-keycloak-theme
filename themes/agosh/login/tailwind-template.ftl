@@ -14,69 +14,95 @@
 		<link rel="icon" href="${url.resourcesPath}/img/favicon.ico" />
 
 		<link rel="stylesheet" href="${url.resourcesPath}/css/styles.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/tokens.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/custom-tokens.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/login.css" />
+		<link rel="stylesheet" href="${url.resourcesPath}/css/layout.css" />
+	
+	      
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap"
+          rel="stylesheet"
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+          rel="stylesheet"
+        />
+      
 	</head>
-	<body class="h-full flex flex-col">
-		<header class="bg-trigo-blue">
-			<nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-				<div class="w-full py-6 flex items-center justify-between">
-					<div class="flex items-center">
-						<a href="#">
-							<span class="sr-only">TRIGO GmbH</span>
-							<img class="h-10 w-auto" src="${url.resourcesPath}/img/TRIGO-logo-human-invert.svg" alt="">
-						</a>
-
-					</div>
-					<div class="ml-10 space-x-4">
-						<a href="https://trigodev.com/contact-us" class="inline-block bg-white py-2 px-4 rounded-md text-base font-medium text-trigo-blue hover:bg-trigo-tangerine">Get in touch</a>
-					</div>
-				</div>
-
-			</nav>
-		</header>
-
-		<div class="h-full flex flex-col justify-center py-12 sm:px-6 lg:px-8">
-			<div class="sm:mx-auto sm:w-full sm:max-w-md">
-				<img class="mx-auto h-12 w-auto" src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
-				<h1 class="mt-6 text-center text-header2 tracking-header2 font-semibold text-trigo-blue">
-					${kcSanitize(msg("loginTitleHtml",(realm.displayNameHtml!'')))?no_esc}
-				</h1>
-				<p class="mt-2 text-paragraph tracking-paragraph text-trigo-blue">
-					<#nested "description">
-				</p>
-			</div>
-
-			<div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
-				<div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10">
-					<#nested "main">
+	<body class="h-full flex flex-col">			
+		<div class='layout'>
+			<div class='layout__left'>	
+				<div class='layout__left-content-wrapper'>
+					<div class='layout__left-content'>
+						<div class='u-divider-5-625rem'></div>
+						<img  src="${url.resourcesPath}/img/TRIGO-logo-human.svg" alt="logo" />
+						<div class='u-divider-0-25rem'></div>
+						<#--  <div class='sign__alert-container'></div>  -->
+						
+						
+						<#--  //////  -->
+						<#nested "main">
+					</div>	
 				</div>
 			</div>
-		</div>
-		<footer class="bg-trigo-blue">
-			<div class="max-w-7xl mx-auto py-12 px-4 overflow-hidden sm:px-6 lg:px-8">
-				<nav class="-mx-5 -my-2 flex flex-wrap justify-center" aria-label="Footer">
-					<div class="px-5 py-2">
-						<a href="https://trigodev.com/?utm_source=sso&utm_medium=login_page" target="_blank" rel="noopener noreferrer"
-							class="text-small tracking-paragraph text-white hover:text-trigo-tangerine">
-							TRIGO
-						</a>
-					</div>
+			<div class='layout__right'>
+				<div class='layout__right-content-wrapper'>				
+					<div class='layout__right-content'>
+						<div class='u-divider-5-625rem'></div>
+						<div class='placeholder' >
+							<div class='placeholder__row'>
+									<div class='placeholder__block placeholder__block--delay1 placeholder__block--color-1 placeholder__block--shape-topLeft' >
+										<img  src="${url.resourcesPath}/img/01.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--delay2 placeholder__block--color-2 placeholder__block--shape-rounded' >
+										<img  src="${url.resourcesPath}/img/02.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--vertical placeholder__block--delay3 placeholder__block--color-3 placeholder__block--shape-bottom '  >
+										<img  src="${url.resourcesPath}/img/03.png" alt='placeholder' />
+									</div>									
+							</div>
+							<div class='placeholder__row'>								
+									<div class='placeholder__block placeholder__block--vertical placeholder__block--delay3 placeholder__block--color-4 placeholder__block--shape-top ' >
+										<img  src="${url.resourcesPath}/img/04.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--delay1 placeholder__block--color-5 placeholder__block--shape-topLeft' >
+										<img  src="${url.resourcesPath}/img/05.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--delay2 placeholder__block--color-6 placeholder__block--shape-bottomRight' >
+										<img  src="${url.resourcesPath}/img/06.png" alt='placeholder' />
+									</div>									
+							</div>
+							<div class='placeholder__row'>								
+									<div class='placeholder__block placeholder__block--delay1 placeholder__block--color-7 placeholder__block--shape-left' >
+										<img  src="${url.resourcesPath}/img/07.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--vertical placeholder__block--delay2 placeholder__block--color-8 placeholder__block--shape-right ' >
+										<img  src="${url.resourcesPath}/img/08.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--delay3 placeholder__block--color-9 placeholder__block--shape-bipolar' >
+										<img  src="${url.resourcesPath}/img/09.png" alt='placeholder' />
+									</div>									
+							</div>
+							<div class='placeholder__row'>								
+									<div class='placeholder__block placeholder__block--delay2 placeholder__block--color-10 placeholder__block--shape-topRight' >
+										<img  src="${url.resourcesPath}/img/10.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--vertical placeholder__block--delay3 placeholder__block--color-11 placeholder__block--shape-rounded ' >
+										<img  src="${url.resourcesPath}/img/11.png" alt='placeholder' />
+									</div>
+									<div class='placeholder__block placeholder__block--delay1 placeholder__block--color-12 placeholder__block--shape-bipolar' >
+										<img  src="${url.resourcesPath}/img/12.png" alt='placeholder' />
+									</div>
+							</div>
+						</div>
 
-					<div class="px-5 py-2">
-						<a href="https://trigodev.com/legal-notice?utm_source=sso&utm_medium=login_page" target="_blank" rel="noopener noreferrer"
-							class="text-small tracking-paragraph text-white hover:text-trigo-tangerine">
-							Legal Notice
-						</a>
 					</div>
-
-					<div class="px-5 py-2">
-						<a href="https://trigodev.com/privacy?utm_source=sso&utm_medium=login_page" target="_blank" rel="noopener noreferrer"
-							class="text-small tracking-paragraph text-white hover:text-trigo-tangerine">
-							Privacy Policy
-						</a>
-					</div>
-				</nav>
+				</div>
 			</div>
-		</footer>
+		</div>	
 	</body>
 </html>
 </#macro>

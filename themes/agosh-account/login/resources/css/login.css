@@ -1,7 +1,8 @@
 .sign__wrapper {
 }
 
-.sign__headline {
+.sign__headline h1 {
+	/* ///Used */
 	color: var(--on-background);
 	font-size: var(--m3-headline-small-font-size);
 	text-decoration: var(--m3-headline-small-text-decoration);
@@ -89,7 +90,7 @@
 	text-decoration: none;
 }
 
-.sign__forgot-link {
+.sign__forgot-link a{
 	font-size: var(--m3-body-medium-font-size);
 	text-decoration: var(--m3-body-medium-text-decoration);
 	font-family: var(--m3-body-medium-font-family);
@@ -113,4 +114,45 @@
 .grid--between {
 	justify-content: space-between;
 	grid-template-columns: repeat(2, max-content);
+}
+
+.sign__or-wrapper {
+  display: flex;
+  align-items: center;
+}
+.sign__or-wrapper > div {
+    height: 1px;
+    width: 100%;
+    max-width: 50%;
+    background: var(--surface41); 
+}
+.sign__or-wrapper > span {
+	font-size: var(--m3-body-medium-font-size);
+	text-decoration: var(--m3-body-medium-text-decoration);
+	font-family: var(--m3-body-medium-font-family);
+	font-weight: var(--m3-body-medium-font-weight);
+	font-style: var(--m3-body-medium-font-style);
+	font-stretch: var(--m3-body-medium-font-stretch);
+	letter-spacing: var(--m3-body-medium-letter-spacing);
+	line-height: var(--m3-body-medium-line-height);
+    flex-shrink: 0;
+    color: var(--on-solid-bg);
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+ 
+}
+.sign__create-account{
+	position: relative;
+}
+.sign__create-account a{
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: inherit;
+	text-decoration: none;
 }

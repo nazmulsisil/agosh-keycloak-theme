@@ -40,6 +40,10 @@
 	margin-top: 0.25rem;
 }
 
+.u-divider-0-5rem {
+	margin-top: 0.5rem;
+}
+
 .u-divider-0-75rem {
 	margin-top: 0.75rem;
 }
@@ -436,6 +440,25 @@
 	position: relative;
 	top: -13rem;
 }
+
+.sign__verify-text {
+	color: var(--on-background);
+
+	font-size: var(--m3-body-large-font-size);
+	text-decoration: var(--m3-body-large-text-decoration);
+	font-family: var(--m3-body-large-font-family);
+	font-weight: var(--m3-body-large-font-weight);
+	font-style: var(--m3-body-large-font-style);
+	font-stretch: var(--m3-body-large-font-stretch);
+	letter-spacing: var(--m3-body-large-letter-spacing);
+	line-height: var(--m3-body-large-line-height);
+}
+
+/* .sign__verify-text a {
+	font-size: var(--m3-body-large-font-size);
+} */
+
+
 
 @media only screen and (max-width: 67.5rem) {
 	.sign__forgot-info-placeholder {

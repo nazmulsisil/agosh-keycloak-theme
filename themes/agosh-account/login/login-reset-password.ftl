@@ -38,10 +38,12 @@
                                     </div>
                                 </div>                        
 
-                                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">                
-                                   <agosh-button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">
-                                        ${msg("doSubmit")}
-                                    </agosh-button>
+                                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">  
+                                    <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">
+                                        <agosh-button>
+                                            ${msg("doSubmit")}
+                                        </agosh-button>
+                                    </button>    
                                 </div>
                             </div>
                         </form>

@@ -153,9 +153,11 @@
                                 </div>
 
                                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                                    <agosh-button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}"  type="submit">
-                                        ${msg("doRegister")}
-                                    </agosh-button>                                
+                                    <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}"  type="submit">
+                                        <agosh-button >
+                                            ${msg("doRegister")}
+                                        </agosh-button>  
+                                    </button>                                                                  
                                 </div>
                             </div>
                         </form>

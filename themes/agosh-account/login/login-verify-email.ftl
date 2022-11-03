@@ -10,13 +10,15 @@
                 <@layout.registrationLayout displayInfo=true; section>
                     <#if section = "header">
                         ${msg("emailVerifyTitle")}
+                        <div class='u-divider-0-75rem'></div>  
                     <#elseif section = "form">
-                        <p class="instruction">${msg("emailVerifyInstruction1")}</p>
+                        <p class="instruction sign__verify-text">${msg("emailVerifyInstruction1")}</p>
                     <#elseif section = "info">
-                        <p class="instruction">
+                        <div class='u-divider-0-75rem'></div>  
+                        <p class="instruction sign__verify-text">
                             ${msg("emailVerifyInstruction2")}
-                            <br/>
-                            <a href="${url.loginAction}">${msg("doClickHere")}</a> ${msg("emailVerifyInstruction3")}
+                            <div class='u-divider-0-75rem'></div>  
+                            <a href="${url.loginAction}">${msg("doClickHere")}</a> <span class='sign__verify-text'>${msg("emailVerifyInstruction3")}</span>
                         </p>
                     </#if>
                 </@layout.registrationLayout>

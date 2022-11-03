@@ -4,13 +4,9 @@
     </span>
     <a class='sign__link' data-cy="sign-up-terms" href="${properties.urlTerms}" variant="text">
         Terms and Conditions
-    </a>
-    ,
+    </a>    
+    <span class='sign__link'>, and </span>
     <a class='sign__link' data-cy="sign-up-privacy" href="${properties.urlPrivacy}" variant="text">
         Privacy Policy
-    </a>
-    <span class='sign__link'>and</span>
-    <a class='sign__link' href="${properties.urlCookiePolicy}" variant="text">
-        Cookie Policy
-    </a>
+    </a>       
 </div>

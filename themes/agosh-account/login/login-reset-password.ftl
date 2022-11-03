@@ -39,8 +39,10 @@
                                     </div>
                                 </div>
 
-                                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">
-                                    <input class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit" value="${msg("doSubmit")}"/>
+                                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">                
+                                   <agosh-button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">
+                                        ${msg("doSubmit")}
+                                    </agosh-button>
                                 </div>
                             </div>
                         </form>

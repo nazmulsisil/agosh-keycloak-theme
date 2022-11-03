@@ -97,7 +97,7 @@
 	text-decoration: none;
 }
 
-.sign__forgot-link a{
+.sign__forgot-link a {
 	font-size: var(--m3-body-medium-font-size);
 	text-decoration: var(--m3-body-medium-text-decoration);
 	font-family: var(--m3-body-medium-font-family);
@@ -125,15 +125,15 @@
 }
 
 .sign__or-wrapper {
-  display: flex;
-  align-items: center;
+	display: flex;
+	align-items: center;
 }
 
 .sign__or-wrapper > div {
-    height: 1px;
-    width: 100%;
-    max-width: 50%;
-    background: var(--surface41); 
+	height: 1px;
+	width: 100%;
+	max-width: 50%;
+	background: var(--surface41);
 }
 
 .sign__or-wrapper > span {
@@ -145,19 +145,19 @@
 	font-stretch: var(--m3-body-medium-font-stretch);
 	letter-spacing: var(--m3-body-medium-letter-spacing);
 	line-height: var(--m3-body-medium-line-height);
-    flex-shrink: 0;
-    color: var(--on-solid-bg);
-    padding-left: 1.25rem;
-    padding-right: 1.25rem; 
+	flex-shrink: 0;
+	color: var(--on-solid-bg);
+	padding-left: 1.25rem;
+	padding-right: 1.25rem;
 }
 
-.sign__create-account{
+.sign__create-account {
 	display: block;
 	position: relative;
 	top: -10.75rem;
 }
 
-.sign__create-account-button-placeholder{
+.sign__create-account-button-placeholder {
 	height: 2.5rem;
 }
 
@@ -195,33 +195,33 @@
 	font-style: var(--m3-label-large-font-style);
 	font-stretch: var(--m3-label-large-font-stretch);
 	letter-spacing: var(--m3-label-large-letter-spacing);
-	line-height: var(--m3-label-large-line-height); 
+	line-height: var(--m3-label-large-line-height);
 }
 
-.social-button svg{
+.social-button svg {
 	flex-shrink: 0;
 }
 
 .social-button:focus,
 .social-button:active,
-.social-button:hover{
+.social-button:hover {
 	background-color: none;
-    outline: none;
-    border: none;
+	outline: none;
+	border: none;
 }
 
-.social-button span{
+.social-button span {
 	display: flex;
 	align-items: center;
 	justify-content: center;
 	gap: 0.5rem;
 }
 
-.social-button:not(:last-child){
+.social-button:not(:last-child) {
 	margin-right: 1rem;
 }
 
-.sign__remember{
+.sign__remember {
 	font-size: var(--m3-body-medium-font-size);
 	text-decoration: var(--m3-body-medium-text-decoration);
 	font-family: var(--m3-body-medium-font-family);
@@ -230,29 +230,27 @@
 	font-stretch: var(--m3-body-medium-font-stretch);
 	letter-spacing: var(--m3-body-medium-letter-spacing);
 	line-height: var(--m3-body-medium-line-height);
-	color:var(--on-surface);
+	color: var(--on-surface);
 
 	display: inline-flex;
 	align-items: center;
-	cursor: pointer;	
-}
-
-.sign__remember > input{
 	cursor: pointer;
-	margin-right: .5rem;
-	height: 1.125rem;
-    width: 1.125rem;
-	accent-color:  var(--primary);
 }
 
-
+.sign__remember > input {
+	cursor: pointer;
+	margin-right: 0.5rem;
+	height: 1.125rem;
+	width: 1.125rem;
+	accent-color: var(--primary);
+}
 
 /* TODO: update styles to match toaster */
 .sign__alert {
-	border: 6px solid green;	
-    position: relative;
-    top: -149px;
-    margin-bottom: -32px;
+	border: 6px solid green;
+	position: relative;
+	top: -149px;
+	margin-bottom: -32px;
 }
 
 .sign__alert.alert-error {
@@ -264,24 +262,24 @@
 	width: 100%;
 	position: relative;
 
-	--padding-left:1rem;
+	--padding-left: 1rem;
 }
 
 .sign__input-group .sign__input {
-    height: 3.5rem;
-    width: 100%;
-    color: var(--on-surface);
-    border-radius: 0.5rem;
-    border: 1px solid;
-    border-color: var(--outline);
-    box-shadow: 0 0 0 1px var(--transparent);
-    outline: none;
-    overflow: hidden;
-    padding-left:var(--padding-left);
-    padding-top:var(--padding-left);
-    padding-bottom: 0;
-    padding-right: 2.125rem;
-    background: var(--surface);
+	height: 3.5rem;
+	width: 100%;
+	color: var(--on-surface);
+	border-radius: 0.5rem;
+	border: 1px solid;
+	border-color: var(--outline);
+	box-shadow: 0 0 0 1px var(--transparent);
+	outline: none;
+	overflow: hidden;
+	padding-left: var(--padding-left);
+	padding-top: var(--padding-left);
+	padding-bottom: 0;
+	padding-right: 2.125rem;
+	background: var(--surface);
 
 	font-size: var(--m3-body-large-font-size);
 	text-decoration: var(--m3-body-large-text-decoration);
@@ -294,15 +292,16 @@
 }
 
 .sign__input-group .sign__input-label {
-    color: var(--outline);
-    position: absolute;
-    top: var(--padding-left);
-    left: var(--padding-left);
+	color: var(--outline);
+	position: absolute;
+	top: var(--padding-left);
+	left: var(--padding-left);
 
-    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
-      font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
-    z-index: 1;
-    pointer-events: none;
+	transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+		top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+		font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+	z-index: 1;
+	pointer-events: none;
 
 	font-size: var(--m3-body-large-font-size);
 	text-decoration: var(--m3-body-large-text-decoration);
@@ -312,8 +311,7 @@
 	font-stretch: var(--m3-body-large-font-stretch);
 	letter-spacing: var(--m3-body-large-letter-spacing);
 	line-height: var(--m3-body-large-line-height);
-
-  }
+}
 
 .sign__input-group .sign__input:focus,
 .sign__input-group .sign__input:active {
@@ -323,9 +321,14 @@
 
 .sign__input-group .sign__input:focus ~ .sign__input-label,
 .sign__input-group .sign__input:active ~ .sign__input-label,
-.sign__input-group .sign__input:focus  ~ .sign__input-label-wrapper .sign__input-label,
-.sign__input-group .sign__input:active ~ .sign__input-label-wrapper .sign__input-label
- {
+.sign__input-group
+	.sign__input:focus
+	~ .sign__input-label-wrapper
+	.sign__input-label,
+.sign__input-group
+	.sign__input:active
+	~ .sign__input-label-wrapper
+	.sign__input-label {
 	font-size: 12px;
 	top: 4px;
 	font-weight: var(--m3-label-medium-font-weight);
@@ -333,24 +336,28 @@
 }
 
 .sign__input-group .sign__input.has-value ~ .sign__input-label,
-.sign__input-group .sign__input.has-value ~ .sign__input-label-wrapper .sign__input-label
- {
+.sign__input-group
+	.sign__input.has-value
+	~ .sign__input-label-wrapper
+	.sign__input-label {
 	font-size: 12px;
 	top: 4px;
 	font-weight: var(--m3-label-medium-font-weight);
 	color: var(--primary);
 }
 
-.sign__input-group .sign__input[aria-invalid=true] {    
-    border-color: var(--error);
-    box-shadow: 0 0 0 1px var(--error);
+.sign__input-group .sign__input[aria-invalid="true"] {
+	border-color: var(--error);
+	box-shadow: 0 0 0 1px var(--error);
 }
 
-.sign__input-group .sign__input[aria-invalid=true] ~ .sign__input-label,
-.sign__input-group .sign__input[aria-invalid=true] ~ .sign__input-label-wrapper .sign__input-label
- {
-    color: var(--error);
-  }
+.sign__input-group .sign__input[aria-invalid="true"] ~ .sign__input-label,
+.sign__input-group
+	.sign__input[aria-invalid="true"]
+	~ .sign__input-label-wrapper
+	.sign__input-label {
+	color: var(--error);
+}
 
 .sign__input-group .sign__input::placeholder {
 	color: var(--outline);
@@ -373,17 +380,19 @@
 }
 
 .sign__input-group .sign__input:disabled ~ .sign__input-label,
-.sign__input-group .sign__input:disabled ~ .sign__input-label-wrapper .sign__input-label
- {
+.sign__input-group
+	.sign__input:disabled
+	~ .sign__input-label-wrapper
+	.sign__input-label {
 	color: var(--m3-ref-neutral-neutral50);
 }
 
-.sign__error-message{
+.sign__error-message {
 	color: var(--error);
 	display: flex;
-    justify-content: flex-end;
-    color: var(--error);
-    width: 100%;
+	justify-content: flex-end;
+	color: var(--error);
+	width: 100%;
 	margin-top: 2px;
 
 	font-size: var(--m3-body-medium-font-size);
@@ -394,16 +403,14 @@
 	font-stretch: var(--m3-body-medium-font-stretch);
 	letter-spacing: var(--m3-body-medium-letter-spacing);
 	line-height: var(--m3-body-medium-line-height);
-	
 }
-
 
 @media only screen and (max-width: 67rem) {
 	.social-button {
 		padding: 0.5rem 0;
 		min-height: 4.6875rem;
 	}
-	.social-button span{
+	.social-button span {
 		flex-direction: column;
 		gap: 0.25rem;
 	}
@@ -413,4 +420,4 @@
 	.sign__input-group .sign__input {
 		padding-right: 1.5rem;
 	}
-  }
+}

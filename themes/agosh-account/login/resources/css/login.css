@@ -20,6 +20,10 @@
 	font-stretch: var(--m3-body-medium-font-stretch);
 	letter-spacing: var(--m3-body-medium-letter-spacing);
 	line-height: var(--m3-body-medium-line-height);
+
+	/* Event it becomes two line, don't let the height to increase so that the top position of sign__alert-wrapper stays same */
+	height: 20px;
+	overflow: visible;
 }
 
 .sign__alert-container {
@@ -437,7 +441,7 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	top: -198px;
+	top: -178px;
 	margin-bottom: var(--alert-wrapper-negative-margin);
 }
 

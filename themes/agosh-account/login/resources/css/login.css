@@ -365,6 +365,25 @@
 	color: var(--m3-ref-neutral-neutral50);
 }
 
+.sign__error-message{
+	color: var(--error);
+	display: flex;
+    justify-content: flex-end;
+    color: var(--error);
+    width: 100%;
+	margin-top: 2px;
+
+	font-size: var(--m3-body-medium-font-size);
+	text-decoration: var(--m3-body-medium-text-decoration);
+	font-family: var(--m3-body-medium-font-family);
+	font-weight: var(--m3-body-medium-font-weight);
+	font-style: var(--m3-body-medium-font-style);
+	font-stretch: var(--m3-body-medium-font-stretch);
+	letter-spacing: var(--m3-body-medium-letter-spacing);
+	line-height: var(--m3-body-medium-line-height);
+	
+}
+
 
 @media only screen and (max-width: 67rem) {
 	.social-button {

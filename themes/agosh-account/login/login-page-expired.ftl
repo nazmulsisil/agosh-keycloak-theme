@@ -7,21 +7,18 @@
                 <img  src="${url.resourcesPath}/img/agosh-icon.svg" alt="logo" />
                 <div class='u-divider-5-5rem'></div>                
                 
-                <@layout.registrationLayout displayInfo=true; section>
+                <@layout.registrationLayout; section>
                     <#if section = "header">
-                        ${msg("emailVerifyTitle")}
+                        ${msg("pageExpiredTitle")}
                         <div class='u-divider-0-75rem'></div>  
                     <#elseif section = "form">
-                        <p class="instruction sign__verify-text">${msg("emailVerifyInstruction1")}</p>
-                    <#elseif section = "info">
-                        <div class='u-divider-0-75rem'></div>  
-                        <p class="instruction sign__verify-text">
-                            ${msg("emailVerifyInstruction2")}
-                            <div class='u-divider-0-75rem'></div>  
-                            <a href="${url.loginAction}">${msg("doClickHere")}</a> <span class='sign__verify-text'>${msg("emailVerifyInstruction3")}</span>
+                        <p id="instruction1" class="instruction sign__verify-text">
+                            ${msg("pageExpiredMsg1")} <a id="loginRestartLink" href="${url.loginRestartFlowUrl}">${msg("doClickHere")}</a> 
+                            <br>  
+                           <span class='sign__verify-text'>${msg("pageExpiredMsg2")} <a id="loginContinueLink" href="${url.loginAction}">${msg("doClickHere")}</a></span> .
                         </p>
                     </#if>
-                </@layout.registrationLayout>
+                </@layout.registrationLayout> 
             </div>	
         </div>
     </div>
@@ -33,4 +30,5 @@
             </div>
         </div>
     </div>
-</div>
+</div>	
+ 

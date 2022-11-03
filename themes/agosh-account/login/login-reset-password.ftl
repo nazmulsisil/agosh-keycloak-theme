@@ -19,9 +19,9 @@
                             <div class="${properties.kcFormGroupClass!}">
                                 <div class="${properties.kcInputWrapperClass!}">
                                     <input type="text" id="username" name="username" class="${properties.kcInputClass!}"  value="${(auth.attemptedUsername!'')}" aria-invalid="<#if messagesPerField.existsError('username')>true</#if>"/>
-                                <div class="${properties.kcLabelWrapperClass!}">
-                                    <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
-                                </div>
+                                    <div class="${properties.kcLabelWrapperClass!}">
+                                        <label for="username" class="${properties.kcLabelClass!}"><#if !realm.loginWithEmailAllowed>${msg("username")}<#elseif !realm.registrationEmailAsUsername>${msg("usernameOrEmail")}<#else>${msg("email")}</#if></label>
+                                    </div>
                                     <#if messagesPerField.existsError('username')>
                                         <span id="input-error-username" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
                                                     ${kcSanitize(messagesPerField.get('username'))?no_esc}
@@ -38,10 +38,12 @@
                                     </div>
                                 </div>                        
 
-                                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">                
-                                   <agosh-button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">
-                                        ${msg("doSubmit")}
-                                    </agosh-button>
+                                <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">  
+                                    <button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">
+                                        <agosh-button>
+                                            ${msg("doSubmit")}
+                                        </agosh-button>
+                                    </button>    
                                 </div>
                             </div>
                         </form>

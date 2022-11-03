@@ -245,6 +245,7 @@
 	}
 }
 
+/* TODO: update styles to match toaster */
 .sign__alert {
 	border: 6px solid green;	
     position: relative;
@@ -254,4 +255,81 @@
 
 .sign__alert.alert-error {
 	border: 6px solid red;
+}
+
+/* TODO: update styles to match Agosh input */
+.sign__input-group {
+	width: 100%;
+	position: relative;
+}
+
+.sign__input-group .sign__input {
+    height: 3.5rem;
+    width: 100%;
+    color: var(--on-surface);
+    border-radius: 0.5rem;
+    border: 1px solid;
+    border-color: red;
+    box-shadow: 0 0 0 1px red;
+    outline: none;
+    overflow: hidden;
+    padding-left:1rem;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 2.125rem;
+    background: var(--surface);
+}
+
+
+
+.sign__input-group .sign__input:focus,
+.sign__input-group .sign__input:active {
+	box-shadow: 0 0 0 1px red;
+	border-color: red;
+}
+
+.sign__input-group .sign__input:focus ~ .sign__input-label,
+.sign__input-group .sign__input:active ~ .sign__input-label {
+	font-size: 12px;
+	top: 4px;
+	font-weight: var(--m3-label-medium-font-weight);
+	color: red;
+}
+
+
+
+.sign__input-group .sign__input::placeholder {
+	color: var(--outline);
+}
+
+
+.sign__input-group .sign__input:disabled {
+	color: var(--m3-ref-neutral-neutral50);
+	opacity: 1;
+	pointer-events: none;
+	background-color: var(--m3-ref-neutral-neutral90);
+}
+
+.sign__input-group .sign__input:disabled ~ .sign__input-label {
+	color: var(--m3-ref-neutral-neutral50);
+}
+  
+
+.sign__input-group .sign__input-label {
+    color: red;
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+
+    transition: color 200ms cubic-bezier(0, 0, 0.2, 1) 0ms, top 200ms cubic-bezier(0, 0, 0.2, 1) 0ms,
+      font-size 200ms cubic-bezier(0, 0, 0.2, 1) 0ms;
+    z-index: 1;
+    pointer-events: none;
+
+  }
+
+.sign__input-group .sign__input.has-value ~ .sign__input-label {
+	font-size: 12px;
+	top: 4px;
+	color: red;
 }

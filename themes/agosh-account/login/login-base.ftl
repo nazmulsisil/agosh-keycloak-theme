@@ -17,6 +17,18 @@
             <#if realm.password>
               <form id="kc-form-login" onsubmit="login.disabled = true; return true;" action="${url.loginAction}" method="post">
                 <div class="${properties.kcFormGroupClass!}">
+                  
+                  <#if usernameEditDisabled??>
+                    <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
+                    <#else>
+                      <input tabindex="1" label='Email' id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" autocomplete="off"
+                        aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
+                      <#if messagesPerField.existsError('username','password')>
+                        <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
+                          ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
+                        </span>
+                      </#if>
+                  </#if>
                   <label for="username" class="${properties.kcLabelClass!}">
                     <#if !realm.loginWithEmailAllowed>
                       ${msg("username")}
@@ -26,25 +38,14 @@
                           ${msg("email")}
                     </#if>
                   </label>
-                  <#if usernameEditDisabled??>
-                    <agosh-input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
-                    <#else>
-                      <agosh-input tabindex="1" label='Email' id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" autocomplete="off"
-                        aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
-                      <#if messagesPerField.existsError('username','password')>
-                        <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
-                          ${kcSanitize(messagesPerField.getFirstError('username','password'))?no_esc}
-                        </span>
-                      </#if>
-                  </#if>
                 </div>
                 <div class='u-divider-1-5rem'></div>
                 <div class="${properties.kcFormGroupClass!}">
+                  <input tabindex="2" label="Password" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
+                    aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
                   <label for="password" class="${properties.kcLabelClass!}">
                     ${msg("password")}
                   </label>
-                  <agosh-input tabindex="2" label="Password" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
-                    aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
                 </div>
                 <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
                   <div id="kc-form-options">

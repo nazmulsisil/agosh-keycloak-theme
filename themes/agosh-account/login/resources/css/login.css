@@ -479,16 +479,13 @@
 }
 
 .sign__alert-wrapper {
-	--alert-wrapper-height: 5.25rem;
-	--alert-wrapper-negative-margin: -5.25rem;
-
 	overflow: visible;
-	height: var(--alert-wrapper-height);
+	height: 5.25rem;
 	display: flex;
 	align-items: center;
-	position: relative;
-	top: -178px;
-	margin-bottom: var(--alert-wrapper-negative-margin);
+	position: absolute;
+	top: 132px;
+	width: 100%;
 }
 
 .sign__alert {

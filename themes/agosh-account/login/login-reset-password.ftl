@@ -1,6 +1,6 @@
 <#import "template.ftl" as layout>
 
-<div class='layout'>
+<div class='forgot-password-page layout'>
     <div class='layout__left'>	
         <div class='layout__left-content-wrapper'>
             <div class='layout__left-content'>
@@ -12,7 +12,7 @@
                     <#if section = "header">
                         ${msg("emailForgotTitle")}
                         <div class='u-divider-0-75rem'></div> 
-
+                        <div class='sign__forgot-info-placeholder'></div>                         
                         <div class='u-divider-2rem'></div>   
                     <#elseif section = "form">
                         <form id="kc-reset-password-form" class="${properties.kcFormClass!}" action="${url.loginAction}" method="post">

@@ -10,7 +10,6 @@
                 
                 <@layout.registrationLayout displayInfo=true displayMessage=!messagesPerField.existsError('username'); section>
                     <#if section = "header">
-                        <div class='u-divider-4-5rem'></div>
                         ${msg("emailForgotTitle")}
                         <div class='u-divider-0-75rem'></div> 
 

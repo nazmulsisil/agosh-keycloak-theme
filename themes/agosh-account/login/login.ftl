@@ -5,7 +5,7 @@
             <div class='layout__left-content'>
                 <div class='u-divider-5-625rem'></div>
                 <img  src="${url.resourcesPath}/img/agosh-icon.svg" alt="logo" />
-                <div class='u-divider-0-25rem'></div>                
+                <div class='u-divider-5-5rem'></div>                
                 
                 <#include "/login-base.ftl">
             </div>	

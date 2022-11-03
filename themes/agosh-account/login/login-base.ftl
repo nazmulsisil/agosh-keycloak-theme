@@ -1,7 +1,6 @@
 <#import "template.ftl" as layout>
   <@layout.registrationLayout displayMessage=!messagesPerField.existsError('username','password') displayInfo=realm.password && realm.registrationAllowed && !registrationDisabled??; section>
     <#if section="header">
-      <div class='u-divider-4-5rem'></div>
       ${msg("loginAccountTitle")}
       <div class='u-divider-0-75rem'></div>
       <div class='sign__sub-headline'>

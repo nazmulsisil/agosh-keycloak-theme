@@ -318,14 +318,19 @@
 }
 
 .sign__input-group .sign__input:focus ~ .sign__input-label,
-.sign__input-group .sign__input:active ~ .sign__input-label {
+.sign__input-group .sign__input:active ~ .sign__input-label,
+.sign__input-group .sign__input:focus  ~ .sign__input-label-wrapper .sign__input-label,
+.sign__input-group .sign__input:active ~ .sign__input-label-wrapper .sign__input-label
+ {
 	font-size: 12px;
 	top: 4px;
 	font-weight: var(--m3-label-medium-font-weight);
 	color: var(--primary);
 }
 
-.sign__input-group .sign__input.has-value ~ .sign__input-label {
+.sign__input-group .sign__input.has-value ~ .sign__input-label,
+.sign__input-group .sign__input.has-value ~ .sign__input-label-wrapper .sign__input-label
+ {
 	font-size: 12px;
 	top: 4px;
 	font-weight: var(--m3-label-medium-font-weight);
@@ -337,7 +342,9 @@
     box-shadow: 0 0 0 1px var(--error);
 }
 
-.sign__input-group .sign__input[aria-invalid=true] ~ .sign__input-label {
+.sign__input-group .sign__input[aria-invalid=true] ~ .sign__input-label,
+.sign__input-group .sign__input[aria-invalid=true] ~ .sign__input-label-wrapper .sign__input-label
+ {
     color: var(--error);
   }
 
@@ -361,7 +368,9 @@
 	background-color: var(--m3-ref-neutral-neutral90);
 }
 
-.sign__input-group .sign__input:disabled ~ .sign__input-label {
+.sign__input-group .sign__input:disabled ~ .sign__input-label,
+.sign__input-group .sign__input:disabled ~ .sign__input-label-wrapper .sign__input-label
+ {
 	color: var(--m3-ref-neutral-neutral50);
 }
 

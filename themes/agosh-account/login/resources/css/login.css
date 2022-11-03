@@ -118,14 +118,26 @@
 }
 
 .grid {
-	display: grid;
-	grid-gap: 1rem;
-	align-items: center;
+	display: grid;	
 }
 
 .grid--between {
+	grid-gap: 1rem;
+	align-items: center;
 	justify-content: space-between;
 	grid-template-columns: repeat(2, max-content);
+}
+
+.grid--input-container {
+	grid-gap: 1rem;
+	grid-template-columns: repeat(2, calc((100% - 1rem) / 2));
+  
+}
+
+@media only screen and (max-width: 64rem) {
+	.grid--input-container {
+		grid-template-columns: 1fr;
+	}
 }
 
 .sign__or-wrapper {

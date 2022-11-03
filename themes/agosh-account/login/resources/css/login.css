@@ -332,29 +332,23 @@
 	color: var(--primary);
 }
 
-.sign__input-group .sign__input.has-error {    
+.sign__input-group .sign__input[aria-invalid=true] {    
     border-color: var(--error);
     box-shadow: 0 0 0 1px var(--error);
 }
 
-.sign__input-group .sign__input.has-error ~ .sign__input-label {
-	font-size: 12px;
-	top: 4px;
-	font-weight: var(--m3-label-medium-font-weight);
+.sign__input-group .sign__input[aria-invalid=true] ~ .sign__input-label {
     color: var(--error);
   }
 
-.sign__input-group .sign__input.has-error:focus,
-.sign__input-group .sign__input.has-error:active {
+.sign__input-group .sign__input[aria-invalid=true]:focus,
+.sign__input-group .sign__input[aria-invalid=true]:active {
 	box-shadow: 0 0 0 1px var(--error);
 	border-color: var(--error);
 }
 
-.sign__input-group .sign__input.has-error:focus ~ .sign__input-label,
-.sign__input-group .sign__input.has-error:active ~ .sign__input-label {
-	font-size: 12px;
-	top: 4px;
-	font-weight: var(--m3-label-medium-font-weight);
+.sign__input-group .sign__input[aria-invalid=true]:focus ~ .sign__input-label,
+.sign__input-group .sign__input[aria-invalid=true]:active ~ .sign__input-label {
 	color: var(--error);
 }
 

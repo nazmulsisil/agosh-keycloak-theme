@@ -20,7 +20,7 @@
                   <#if usernameEditDisabled??>
                     <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" type="text" disabled />
                     <#else>
-                      <input tabindex="1" label='Email' id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" autocomplete="off"
+                      <input tabindex="1" id="username" class="${properties.kcInputClass!}" name="username" value="${(login.username!'')}" autocomplete="off"
                         aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
                       <#if messagesPerField.existsError('username','password')>
                         <span id="input-error" class="${properties.kcInputErrorMessageClass!}" aria-live="polite">
@@ -40,7 +40,7 @@
                 </div>
                 <div class='u-divider-1-5rem'></div>
                 <div class="${properties.kcFormGroupClass!}">
-                  <input tabindex="2" label="Password" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
+                  <input tabindex="2" id="password" class="${properties.kcInputClass!}" name="password" type="password" autocomplete="off"
                     aria-invalid="<#if messagesPerField.existsError('username','password')>true</#if>" />
                   <label for="password" class="${properties.kcLabelClass!}">
                     ${msg("password")}
@@ -65,30 +65,35 @@
                   </div>
                   <div class='u-divider-2-5rem'> </div>
                   <#include "/registration-terms.ftl">
-                    <div class='u-divider-1-5rem'></div>
-                    <div class='grid grid--between'>
-                      <div class="${properties.kcFormOptionsWrapperClass!}">
-                        <#if realm.resetPasswordAllowed>
-                          <span><a tabindex="5" href="${url.loginResetCredentialsUrl}">
-                              ${msg("doForgotPassword")}
-                            </a></span>
-                        </#if>
-                      </div>
-                      <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
-                        <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}"
-            </#if>/>
-            <agosh-button tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit">
-              ${msg("doLogIn")}
-            </agosh-button>
+                  <div class='u-divider-1-5rem'></div>
+                  <div class='grid grid--between'>
+                    <div class="${properties.kcFormOptionsWrapperClass!}">
+                      <#if realm.resetPasswordAllowed>
+                        <span>
+                          <a tabindex="5" href="${url.loginResetCredentialsUrl}">
+                            ${msg("doForgotPassword")}
+                          </a>
+                        </span>
+                      </#if>
+                    </div>
+                    <div id="kc-form-buttons" class="${properties.kcFormGroupClass!}">
+                      <input type="hidden" id="id-hidden-input" name="credentialId" <#if auth.selectedCredential?has_content>value="${auth.selectedCredential}" </#if>/>
+                      <button tabindex="4" class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" name="login" id="kc-login" type="submit">
+                        <agosh-button>
+                          ${msg("doLogIn")}
+                        </agosh-button>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </#if>
           </div>
-        </div>
-        </div>
-        </form>
-    </#if>
-    </div>
-    <div class='u-divider-2-5rem'></div>
-    <div class='sign__create-account-button-placeholder'></div>
-    <div class='u-divider-1-5rem'></div>
+          <div class='u-divider-2-5rem'></div>
+          <div class='sign__create-account-button-placeholder'></div>
+          <div class='u-divider-1-5rem'></div>
+
+          
     <#if realm.password && social.providers??>
       <div id="kc-social-providers" class="${properties.kcFormSocialAccountSectionClass!}">
         <#-- -->

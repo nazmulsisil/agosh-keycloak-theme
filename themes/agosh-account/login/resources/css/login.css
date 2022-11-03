@@ -265,6 +265,14 @@
 	accent-color: var(--primary);
 }
 
+.sign__submit {
+	background: none;
+	border: none;
+	outline: none;
+	padding: 0;
+	border-radius: 99rem;
+}
+
 /* TODO: update styles to match Agosh input */
 .sign__input-group {
 	width: 100%;
@@ -413,7 +421,7 @@
 	line-height: var(--m3-body-medium-line-height);
 }
 
-.forgot-password-page .info{
+.forgot-password-page .info {
 	color: var(--on-background);
 
 	font-size: var(--m3-body-large-font-size);
@@ -426,26 +434,24 @@
 	line-height: var(--m3-body-large-line-height);
 
 	position: relative;
-	top:-13rem;
+	top: -13rem;
 }
 
 @media only screen and (max-width: 67.5rem) {
 	.sign__forgot-info-placeholder {
-		height: 4.5rem
+		height: 4.5rem;
 	}
-	.forgot-password-page .info{
-	
-		top:-14.5rem;
+	.forgot-password-page .info {
+		top: -14.5rem;
 	}
 }
 
 @media only screen and (max-width: 60rem) {
 	.sign__forgot-info-placeholder {
-		height: 3rem
+		height: 3rem;
 	}
-	.forgot-password-page .info{
-	
-		top:-13rem;
+	.forgot-password-page .info {
+		top: -13rem;
 	}
 }
 

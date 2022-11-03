@@ -31,13 +31,13 @@
                                 </div>
 
                             </div>
-                           
-                            <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!}">
+                            <div class='u-divider-2rem'></div>  
+                            <div class="${properties.kcFormGroupClass!} ${properties.kcFormSettingClass!} grid grid--between">
                                 <div id="kc-form-options" class="${properties.kcFormOptionsClass!}">
                                     <div class="${properties.kcFormOptionsWrapperClass!}">
                                         <span><a href="${url.loginUrl}">${kcSanitize(msg("backToLogin"))?no_esc}</a></span>
                                     </div>
-                                </div>
+                                </div>                        
 
                                 <div id="kc-form-buttons" class="${properties.kcFormButtonsClass!}">                
                                    <agosh-button class="${properties.kcButtonClass!} ${properties.kcButtonPrimaryClass!} ${properties.kcButtonBlockClass!} ${properties.kcButtonLargeClass!}" type="submit">

@@ -1,15 +1,18 @@
+const applyHasValueClass = (inputElement) => {
+	const hasValue = !!inputElement.value.trim();
+	if (hasValue) {
+		inputElement.classList.add("has-value");
+	} else {
+		inputElement.classList.remove("has-value");
+	}
+};
+
 window.addEventListener("load", () => {
 	const inputs = document.querySelectorAll("input");
-	console.log({ inputs });
-	Array.from(inputs).forEach((input) => {
-		input.addEventListener("blur", (e) => {
-			const hasValue = !!e.target.value.trim();
 
-			if (hasValue) {
-				e.target.classList.add("has-value");
-			} else {
-				e.target.classList.remove("has-value");
-			}
-		});
+	Array.from(inputs).forEach((input) => {
+		// initially apply the class
+		applyHasValueClass(input);
+		input.addEventListener("blur", (e) => applyHasValueClass(e.target));
 	});
 });

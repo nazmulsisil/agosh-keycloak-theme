@@ -226,8 +226,7 @@
 
 	display: inline-flex;
 	align-items: center;
-	cursor: pointer;
-	
+	cursor: pointer;	
 }
 
 .sign__remember > input{
@@ -239,10 +238,20 @@
 }
 
  @media only screen and (max-width: 64rem) {
-
-	.social-button{
-    padding: 0.5rem 0;
-    flex-direction: column;
-    min-height: 4.6875rem;
+	.social-button {
+	padding: 0.5rem 0;
+	flex-direction: column;
+	min-height: 4.6875rem;
 	}
-  }
+}
+
+.sign__alert {
+	border: 6px solid green;	
+    position: relative;
+    top: -149px;
+    margin-bottom: -32px;
+}
+
+.sign__alert.alert-error {
+	border: 6px solid red;
+}
